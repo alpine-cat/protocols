@@ -80,10 +80,12 @@ def update(id):
         error = None
 
         # TODO: достать title и body из формы
-        title = None
-        body = None
+        title = request.form['title']
+        body = request.form['body']
 
         # TODO: title обязательное поле. Если его нет записать ошибку
+        if title is None:
+                error = "No title"
 
         if error is not None:
             flash(error)
