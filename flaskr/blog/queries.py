@@ -6,9 +6,9 @@ def post_list(db):
         # id, title, body, created, author_id, username
         # из таблицы post и таблицы user (они связаны)
         # и отсортировать по дате создания по убыванию
-        "SELECT id, title, body, created, author_id, username"
-        "FROM post JOIN user ON post.author_id = user.id"
-        "ORDER BY created DESC"
+            "SELECT p.id, title, body, created, author_id, username"
+            " FROM post p JOIN user u ON p.author_id = u.id"
+            " ORDER BY created DESC"
     ).fetchall()
 
 
