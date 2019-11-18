@@ -8,5 +8,8 @@ flask run
 ```
 
 Flask-BasicAuth
-POSMAN
-ISOMNIA
+POSTMAN
+INSOMNIA
+
+verify password, decorate, with Flask-HTTPAuth
+type basic auth in hostman (testing API)
